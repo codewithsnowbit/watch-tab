@@ -51,6 +51,12 @@ export default function Home() {
           site: '@codewithsnowbit',
           cardType: 'summary_large_image',
         }}
+        additionalMetaTags={[
+          {
+            property: 'keywords',
+            content: "clock, alarm clock, world clock, timer clock, analog clock"
+          }
+        ]}
     />
       <div className="flex justify-center items-center h-screen flex-col ">
         <h1 className="text-[19vw] font-black
