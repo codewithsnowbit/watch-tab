@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import { NextSeo } from 'next-seo';
+import 'animate.css';
 
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       setTime(new Date().toLocaleTimeString())
     }, 1000)
     return () => clearInterval(interval)
-  }, 1000)
+  }, 800)
   })
   return (
     <div className="dark:bg-black dark:text-white duration-300">
@@ -28,7 +29,7 @@ export default function Home() {
         canonical="https://watch-tab.now.sh/"
     />
       <div className="flex justify-center items-center h-screen">
-        <h1 className="text-[19vw] font-black" suppressHydrationWarning>
+        <h1 className="text-[19vw] font-black animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
           {time}
         </h1>
       </div>
