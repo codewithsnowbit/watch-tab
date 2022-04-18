@@ -4,7 +4,7 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return(
     <>
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-5TJG6W3CW6"></Script>
+    <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-${process.env.NEXT_PUBLIC_GTAG}`}></Script>
     <Script id="google-analytics" strategy="lazyOnload">
           {`
               window.dataLayer = window.dataLayer || [];
