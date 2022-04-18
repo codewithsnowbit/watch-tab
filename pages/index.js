@@ -50,7 +50,7 @@ export default function Home() {
         }}
     />
       <div className="flex justify-center items-center h-screen">
-        <h1 className="text-[19vw] font-black animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
+        <h1 className="text-[19vw] font-black dark:selection:bg-white dark:selection:text-black selection:bg-black selection:text-white animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
           {time}
         </h1>
       </div>
