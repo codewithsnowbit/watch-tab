@@ -6,10 +6,13 @@ import 'animate.css';
 
 export default function Home() {
   const [time, setTime] = React.useState("WatchTab")
+  const [date, setDate] = React.useState([])
   React.useEffect(() => {
   setTimeout(() => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString())
+      // display date with the name of the month and the day without the year
+      setDate(new Date().toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric' }))
     }, 1000)
     return () => clearInterval(interval)
   }, 800)
@@ -49,10 +52,13 @@ export default function Home() {
           cardType: 'summary_large_image',
         }}
     />
-      <div className="flex justify-center items-center h-screen">
-        <h1 className="text-[19vw] font-black dark:selection:bg-white dark:selection:text-black selection:bg-black selection:text-white animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
+      <div className="flex justify-center items-center h-screen flex-col ">
+        <h1 className="text-[19vw] font-black
+        dark:selection:bg-white dark:selection:text-black selection:bg-black selection:text-white animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
           {time}
         </h1>
+        <h3 className="text-black text-[6vw] 
+        dark:text-white dark:selection:bg-white dark:selection:text-black selection:bg-black selection:text-white">{date}</h3>
       </div>
     </div>
   )
