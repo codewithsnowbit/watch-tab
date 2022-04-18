@@ -5,14 +5,12 @@ import 'animate.css';
 
 
 export default function Home() {
-  const [time, setTime] = React.useState("WatchTab")
+  const [time, setTime] = React.useState(new Date().toLocaleTimeString());
   React.useEffect(() => {
-  setTimeout(() => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString())
     }, 1000)
     return () => clearInterval(interval)
-  }, 800)
   })
   return (
     <div className="dark:bg-black dark:text-white duration-300">
@@ -24,7 +22,7 @@ export default function Home() {
       <meta name="robots" content= "index, follow" />
       </Head>
       <NextSeo
-        title={`${time} ${time === "WatchTab" ? "" : " - WatchTab"}`}
+        title={`${time}`}
         description="Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free."
         canonical="https://watch-tab.now.sh/"
     />
