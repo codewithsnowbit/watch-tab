@@ -4,12 +4,14 @@ import { NextSeo } from 'next-seo';
 
 
 export default function Home() {
-  const [time, setTime] = React.useState(new Date().toLocaleTimeString())
+  const [time, setTime] = React.useState("WatchTab")
   React.useEffect(() => {
+  setTimeout(() => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString())
     }, 1000)
     return () => clearInterval(interval)
+  }, 1000)
   })
   return (
     <div className="dark:bg-black dark:text-white duration-300">
@@ -21,7 +23,7 @@ export default function Home() {
       <meta name="robots" content= "index, follow" />
       </Head>
       <NextSeo
-        title="Watch Tab"
+        title={`${time} ${time === "WatchTab" ? "" : " - WatchTab"}`}
         description="Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free."
         canonical="https://watch-tab.now.sh/"
     />
