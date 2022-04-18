@@ -27,6 +27,27 @@ export default function Home() {
         title={`${time} ${time === "WatchTab" ? "" : " - WatchTab"}`}
         description="Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free."
         canonical="https://watch-tab.now.sh/"
+        openGraph={{
+          url: 'https://watch-tab.now.sh/',
+          title: 'Watch Tab',
+          description: 'Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free.',
+          images: [
+            {
+              url: 'https://watch-tab.now.sh/og-image.png',
+              width: 1200,
+              height: 630,
+              alt: 'Watch Tab',
+
+            },
+          ],
+          site_name: 'Watch Tab',
+              
+        }}
+        twitter={{
+          handle: '@codewithsnowbit',
+          site: '@codewithsnowbit',
+          cardType: 'summary_large_image',
+        }}
     />
       <div className="flex justify-center items-center h-screen">
         <h1 className="text-[19vw] font-black animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
