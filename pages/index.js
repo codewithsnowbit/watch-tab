@@ -29,14 +29,14 @@ export default function Home() {
       <NextSeo
         title={`${time} ${time === "WatchTab" ? "" : " - WatchTab"}`}
         description="Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free."
-        canonical="https://watch-tab.now.sh/"
+        canonical="https://watch-tab.vercel.app/"
         openGraph={{
-          url: 'https://watch-tab.now.sh/',
+          url: 'https://watch-tab.vercel.app/',
           title: 'WatchTab - Minimalist Online Clock',
           description: 'Watch Tab is a simple, minimalist and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free.',
           images: [
             {
-              url: 'https://watch-tab.now.sh/og-image.png',
+              url: 'https://watch-tab.vercel.app/og-image.png',
               width: 1200,
               height: 630,
               alt: 'Watch Tab',
