@@ -5,7 +5,7 @@ import 'animate.css';
 
 
 export default function Home() {
-  const [time, setTime] = React.useState("WatchTab")
+  const [time, setTime] = React.useState("WatchTab - Minimalist Online Clock");
   const [date, setDate] = React.useState([])
   React.useEffect(() => {
   setTimeout(() => {
@@ -32,8 +32,8 @@ export default function Home() {
         canonical="https://watch-tab.now.sh/"
         openGraph={{
           url: 'https://watch-tab.now.sh/',
-          title: 'Watch Tab',
-          description: 'Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free.',
+          title: 'WatchTab - Minimalist Online Clock',
+          description: 'Watch Tab is a simple, minimalist and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free.',
           images: [
             {
               url: 'https://watch-tab.now.sh/og-image.png',
@@ -43,7 +43,7 @@ export default function Home() {
 
             },
           ],
-          site_name: 'Watch Tab',
+          site_name: 'WatchTab - Minimalist Online Clock',
               
         }}
         twitter={{
@@ -61,7 +61,7 @@ export default function Home() {
       <div className="flex justify-center items-center h-screen flex-col ">
         <h1 className="text-[19vw] font-black
         dark:selection:bg-white dark:selection:text-black selection:bg-black selection:text-white animate__animated animate__lightSpeedInLeft" suppressHydrationWarning>
-          {time}
+          {time === "WatchTab - Minimalist Online Clock" ? "WatchTab" : time}
         </h1>
         <h3 className="text-black text-[6vw] 
         dark:text-white dark:selection:bg-white dark:selection:text-black selection:bg-black selection:text-white">{date}</h3>
