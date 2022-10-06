@@ -10,7 +10,7 @@ export default function Home() {
   React.useEffect(() => {
   setTimeout(() => {
     const interval = setInterval(() => {
-      setTime(new Date().toLocaleTimeString())
+      setTime(new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: "numeric", second: "numeric", hour12: false }))
       // display date with the name of the month and the day without the year
       setDate(new Date().toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric' }))
     }, 1000)
