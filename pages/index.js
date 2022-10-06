@@ -47,8 +47,8 @@ export default function Home() {
               
         }}
         twitter={{
-          handle: '@codewithsnowbit',
-          site: '@codewithsnowbit',
+          handle: '@dhairyashah_dev',
+          site: '@dhairyashah_dev',
           cardType: 'summary_large_image',
         }}
         additionalMetaTags={[
