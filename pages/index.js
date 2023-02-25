@@ -29,14 +29,14 @@ export default function Home() {
       <NextSeo
         title={`${time} ${time === "WatchTab" ? "" : " - WatchTab"}`}
         description="Watch Tab is a simple and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free."
-        canonical="https://watch-tab.vercel.app/"
+        canonical="https://watch.dhairyashah.dev/"
         openGraph={{
-          url: 'https://watch-tab.vercel.app/',
+          url: 'https://watch.dhairyashah.dev/',
           title: 'WatchTab - Minimalist Online Clock',
           description: 'Watch Tab is a simple, minimalist and easy to use digital clock. It displays the current time in an elegant minimalist design and it is completely ad-free.',
           images: [
             {
-              url: 'https://watch-tab.vercel.app/og-image.png',
+              url: 'https://watch.dhairyashah.dev/og-image.png',
               width: 1200,
               height: 630,
               alt: 'Watch Tab',
@@ -54,7 +54,7 @@ export default function Home() {
         additionalMetaTags={[
           {
             property: 'keywords',
-            content: "clock, alarm clock, world clock, timer clock, analog clock"
+            content: "clock, alarm clock, world clock, timer clock, analog clock, clock tab, clock in browser tab"
           }
         ]}
     />
